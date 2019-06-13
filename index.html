@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="gato.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">﻿
+	<title>Gato</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+ 	<script src="js/popper.min.js"></script>
+ 	<script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #2c2c2c">
+
+	<style type="text/css">
+
+     .cuadro{ 
+      background-color:  #2c2c2c;
+      height: 150px;
+      line-height: 150px;
+      font-size: 130px;
+      color: white;
+     }
+     .row{
+     	 border
+     	 margin-left: 100px;
+     }
+     .cont1{
+     	align-self: center;
+     	color: white;
+     }
+     .container{
+     	
+     }
+     .players{
+     	margin-left: 80px;
+     	height: 80px;
+     }
+	</style>
+	<div id="cont1">
+		<div class="players" style="color: white" align="left">Turno: Jugador 1</div>
+	</div>
+	<div class="container">
+		<div class="row" align="center">
+		<div class="col-2 border-bottom border-right border-light cuadro c1"></div>
+		<div class="col-2 border-bottom border-light border-right border-left cuadro c2"></div>
+		<div class="col-2 border-bottom border-light border-left cuadro c3"></div>
+		</div>
+
+		<div class="row align-self-center" align="center">
+		<div class="col-2 border-top border-bottom border-right border-light cuadro c4"></div>
+		<div class="col-2 border border-light cuadro c5"></div>
+		<div class="col-2 border-top border-bottom border-left border-light cuadro c6"></div>
+		</div>
+
+		<div class="row align-self-center" align="center">
+		<div class="col-2 border-top border-right border-light cuadro c7"></div>
+		<div class="col-2 border-top border-left border-right border-light cuadro c8"></div>
+		<div class="col-2 border-top border-left border-light cuadro c9"></div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			var i=0;
+			$(".cuadro").click(function(){
+				if(i==0){
+				$(this).html("O");
+				$(".players").html("Turno: Jugador 2");
+				i=1;
+			}
+			else{
+				$(this).html("X");
+				$(".players").html("Turno: Jugador 1");
+				i=0;
+			}
+			})
+			if(".c1"=="O"&&".c2"=="O"&&".c3"=="O"){
+				alert("lkmslkasmdlkm");
+			}
+		})
+	</script>
+    
+</body>
+</html>
